@@ -1,2 +1,2 @@
 # Wiki
-*Cheat sheet
+*Cheat Sheet
