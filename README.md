@@ -4,5 +4,5 @@
 ## Home 
 * Docker Introduction
 ## A1. Cheat Sheet
-* Images Commands . 
+* Images Commands 
 * Containers Commands  
