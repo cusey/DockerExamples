@@ -8,3 +8,5 @@
 ## A1. Cheat Sheet
 * Images Commands 
 * Containers Commands  
+## B1. Work Flow for HTML
+This builds container from nginx version 1.14 image to display webpage in browser . 
