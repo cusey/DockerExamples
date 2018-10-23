@@ -1,7 +1,5 @@
 
 ![Docker Logo](https://github.com/cusey/ImageForWiki/blob/master/Logos/Docker.PNG)
-# Repositories 
-* hello-world-html
 # Wiki
 ## Home 
 * Docker Introduction
