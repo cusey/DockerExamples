@@ -44,7 +44,7 @@ hello-world-html    latest              e86aefe80c78        3 minutes ago       
 nginx               1.14                ecc98fc2f376        8 days ago          109MB
 ```
 
-## Step 3: Running a container from the image
+## Step 3: Running a container from the image. Open the Webpage which is served up from the container.
 **Syntax:**
 
 ```

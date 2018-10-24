@@ -90,7 +90,7 @@ Johns-MacBook-Pro:Case1 johncusey$ docker run -itd --name hello-world-html-conta
 
 ```
 
-![Hello World Webpage](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/hello-world-html.png)
+![Hello World Webpage](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case1/hello-world-html-container.png)
 
 ## Step 5: View all the containers
 
