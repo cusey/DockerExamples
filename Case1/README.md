@@ -5,9 +5,12 @@
 
 ### Sytax:
 
-```docker build -t <image-name> <location of dockerfile>``` 
+```
+docker build -t <image-name> <location of dockerfile>
 
-### Example
+``` 
+
+### Example:
 
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker build -t hello-world-html . 
@@ -38,8 +41,21 @@ Successfully tagged hello-world-html:latest
 
 ```   ```   
 
-## Step 2: List all the images
-####Syntax: 
-``` docker images ```  
+## Step 2: List all the images  
+
+#### Syntax: 
+
+``` 
+docker images 
+
+```  
 
 ### Example
+
+```
+Johns-MacBook-Pro:Case1 johncusey$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world-html    latest              485e67eb9de2        8 minutes ago       132MB
+httpd               latest              0240c8f5816c        4 days ago          132MB
+
+```
