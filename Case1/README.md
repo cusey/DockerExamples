@@ -6,7 +6,7 @@
 **Sytax:**
 
 ```
-docker build -t <image-name> <location of dockerfile>
+docker build -t <image-name> <location-of-dockerfile>
 
 ``` 
 
@@ -14,6 +14,8 @@ docker build -t <image-name> <location of dockerfile>
 
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker build -t hello-world-html . 
+
+
 Sending build context to Docker daemon  28.67kB
 Step 1/4 : FROM httpd:latest
 latest: Pulling from library/httpd
@@ -56,6 +58,8 @@ The **httpd** is the image pull down from Docker Hub . The **hello-world-html** 
 
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker images
+
+
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world-html    latest              485e67eb9de2        8 minutes ago       132MB
 httpd               latest              0240c8f5816c        4 days ago          132MB
@@ -76,3 +80,16 @@ httpd               latest              0240c8f5816c        4 days ago          
 docker run -itd --name <container-name> -p <host-port>:<port-in-container> image-name:tag
 
 ```
+**Example:**
+
+
+```
+Johns-MacBook-Pro:Case1 johncusey$ docker run -itd --name hello-world-html-container -p 5555:80 hello-world-html:latest
+
+28a1bccffc30b975902920f4374dd3818fcdf9d0d85e7be6b4174b5946056faa
+
+```
+
+## Step 5: Open the Webpage which is served up from the container  
+
+![Hello World Webpage](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/hello-world-html.png)
