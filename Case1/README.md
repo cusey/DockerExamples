@@ -3,14 +3,14 @@
 
 ## Step 1: Building an image  
 
-### Sytax:
+**Sytax:**
 
 ```
 docker build -t <image-name> <location of dockerfile>
 
 ``` 
 
-### Example:
+**Example:**
 
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker build -t hello-world-html . 
@@ -43,19 +43,36 @@ Successfully tagged hello-world-html:latest
 
 ## Step 2: List all the images  
 
-#### Syntax: 
+**Syntax:**
 
 ``` 
 docker images 
 
 ```  
 
-### Example
+**Example:**
+
+The **httpd** is the image pull down from Docker Hub . The **hello-world-html** is the image that I built.
 
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 hello-world-html    latest              485e67eb9de2        8 minutes ago       132MB
 httpd               latest              0240c8f5816c        4 days ago          132MB
+
+```
+
+## Step 4: Running a container from the image
+
+**Syntax:**    
+
+* -d : represents (detached mode), note that if you dont run this in detached mode, the life of the container will be the life of the terminal in which you are executing it.  
+
+* -p : represents the host-port to container-port mapping, if you substitute it with -P you will get a random port allocated by docker
+
+* --name : represents the name of the container   
+
+```
+docker run -itd --name <container-name> -p <host-port>:<port-in-container> image-name:tag
 
 ```
