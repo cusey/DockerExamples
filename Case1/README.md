@@ -13,8 +13,9 @@ docker build -t <image-name> <location-of-dockerfile>
 **Example:**
 
 ```
-Johns-MacBook-Pro:Case1 johncusey$ docker build -t hello-world-html . 
+Johns-MacBook-Pro:Case2 johncusey$ cd /Users/johncusey/OneDrive/Documents/GitHub/DockerExamples/Case1
 
+Johns-MacBook-Pro:Case1 johncusey$ docker build -t hello-world-html . 
 
 Sending build context to Docker daemon  28.67kB
 Step 1/4 : FROM httpd:latest
