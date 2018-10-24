@@ -64,3 +64,6 @@ cd6777560c34d01601de51e91b7ba37122a277c947b6044824b03efb6dea8f8d
 Johns-MacBook-Pro:Case2 johncusey$ docker run -itd --name my-nginx-container-2 -p 7778:80 hello-world-html:latest
 23bd60b542108cb59360f3f331885b6169041bd903294dd12aa5aead0ce806b5
 ```
+
+![my-nginx-container-1](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-1.png)
+![my-nginx-container-2](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-2.png)
