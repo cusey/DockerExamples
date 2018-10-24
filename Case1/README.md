@@ -378,3 +378,53 @@ Johns-MacBook-Pro:Case1 johncusey$ docker logs -ft  28a1bccffc30
 ```
 
 ### Step 8: Stop the container
+
+**Syntax:** 
+
+```
+docker stop <container-id>
+```
+**Example:** 
+
+
+```
+Johns-MacBook-Pro:docker-tutorial johncusey$ docker stop 28a1bccffc30
+
+28a1bccffc30
+```
+
+### Step 10: Logging into the container    
+
+Note: The container must be started before we can do this.
+
+**Syntax:** 
+
+See all containers
+```
+docker ps -a
+```
+Start container
+```
+docker start <container-id>
+```
+Logging into the container
+```
+docker exec -it <container-id> /bin/bash
+```
+**Example:**  
+
+```
+Johns-MacBook-Pro:docker-tutorial johncusey$ docker ps -a
+
+CONTAINER ID        IMAGE                     COMMAND              CREATED             STATUS                     PORTS               NAMES
+28a1bccffc30        hello-world-html:latest   "httpd-foreground"   20 hours ago        Exited (0) 5 minutes ago                       hello-world-html-container
+
+Johns-MacBook-Pro:docker-tutorial johncusey$ docker start 28a1bccffc30
+
+28a1bccffc30
+
+Johns-MacBook-Pro:docker-tutorial johncusey$ docker exec -it 28a1bccffc30  /bin/bash
+
+root@28a1bccffc30:/usr/local/apache2# pwd
+/usr/local/apache2
+```    
