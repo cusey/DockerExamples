@@ -66,7 +66,7 @@ httpd               latest              0240c8f5816c        4 days ago          
 
 ```
 
-## Step 4: Running a container from the image
+## Step 4: Running a container from the image. Open the Webpage which is served up from the container  
 
 **Syntax:**    
 
@@ -82,7 +82,6 @@ docker run -itd --name <container-name> -p <host-port>:<port-in-container> image
 ```
 **Example:**
 
-
 ```
 Johns-MacBook-Pro:Case1 johncusey$ docker run -itd --name hello-world-html-container -p 5555:80 hello-world-html:latest
 
@@ -90,6 +89,29 @@ Johns-MacBook-Pro:Case1 johncusey$ docker run -itd --name hello-world-html-conta
 
 ```
 
-## Step 5: Open the Webpage which is served up from the container  
-
 ![Hello World Webpage](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/hello-world-html.png)
+
+## Step 5: View all the containers
+
+**Syntax:** 
+
+* Shows all the containers which are running
+
+```
+docker ps 
+
+```
+* Shows all the containers stopped and running
+
+```
+docker ps -a
+```
+
+**Example:**
+
+```
+Johns-MacBook-Pro:Case1 johncusey$ docker ps   
+
+CONTAINER ID        IMAGE                     COMMAND              CREATED             STATUS              PORTS                  NAMES
+28a1bccffc30        hello-world-html:latest   "httpd-foreground"   30 minutes ago      Up 30 minutes       0.0.0.0:5555->80/tcp   hello-world-html-container
+```
