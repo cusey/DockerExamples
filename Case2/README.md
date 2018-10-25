@@ -128,4 +128,27 @@ bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  s
 root@23bd60b54210:/# exit
 exit
 Johns-MacBook-Pro:Case2 johncusey$
-```
+```    
+
+# Step 6: Logging into Dockerhub account on the terminal
+
+Create account at Dockerhub
+
+![DockerHub](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/Docker_Hub.png)  
+
+
+docker login 
+docker tag <currentimage>:<tag> <repository-name>/<image-name>:<tag>
+docker tag my-nginx:latest johncusey/nginx:1.0
+
+docker push <repository-name>/<image-name>:<tag>
+docker push johncusey/nginx:1.0
+
+docker commit <container-id> <repository-name>/<image-name>:<tag>
+
+docker pull <repository-name>/<image-name>:<tag>
+docker pull johncusey/nginx:1.0
+
+docker run -itd --name my-nginx-container-1 -p 7777:80 johncusey/nginx:1.0
+
+
