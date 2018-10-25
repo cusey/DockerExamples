@@ -105,6 +105,19 @@ docker exec -it <container-id> /bin/bash
 
 **Example**  
 
+The configuration file is located inside container  
+
+```
+/etc/nginx/conf.d
+```
+The project folder is located inside container 
+
+```
+/usr/share/nginx/html/hello-world-html
+```
+
+Login into the container
+
 ```
 Johns-MacBook-Pro:Case2 johncusey$ docker exec -it 23bd60b54210 /bin/bash
 
