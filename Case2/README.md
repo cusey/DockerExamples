@@ -64,6 +64,55 @@ cd6777560c34d01601de51e91b7ba37122a277c947b6044824b03efb6dea8f8d
 Johns-MacBook-Pro:Case2 johncusey$ docker run -itd --name my-nginx-container-2 -p 7778:80 hello-world-html:latest
 23bd60b542108cb59360f3f331885b6169041bd903294dd12aa5aead0ce806b5
 ```
+### Container 1   
 
 ![my-nginx-container-1](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-1.png)
-![my-nginx-container-2](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-2.png)
+
+### Container 2
+
+![my-nginx-container-2](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-2.png) 
+
+## Step 4: View all the containers
+
+Shows all the containers which are running
+```
+docker ps 
+```
+Shows all the containers stopped and running
+```
+docker ps -a
+```
+
+**Example**  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker ps
+
+CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                  NAMES
+23bd60b54210        hello-world-html:latest   "nginx -g 'daemon of…"   27 minutes ago      Up 27 minutes       0.0.0.0:7778->80/tcp   my-nginx-container-2
+cd6777560c34        hello-world-html:latest   "nginx -g 'daemon of…"   27 minutes ago      Up 27 minutes       0.0.0.0:7777->80/tcp   my-nginx-container-1
+```
+
+## Step 5: Logging into the container
+
+Note: The container must be started before we can do this.
+
+**Syntax:**   
+
+```
+docker exec -it <container-id> /bin/bash
+```   
+
+**Example**  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker exec -it 23bd60b54210 /bin/bash
+
+root@23bd60b54210:/# pwd
+/
+root@23bd60b54210:/# ls
+bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@23bd60b54210:/# exit
+exit
+Johns-MacBook-Pro:Case2 johncusey$
+```
