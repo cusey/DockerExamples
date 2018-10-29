@@ -175,16 +175,12 @@ docker tag <currentimage>:<tag> <repository-name>/<image-name>:<tag>
 *Example:*
 
 ```   
-Johns-MacBook-Pro:Case2 johncusey$ docker tag hello-world-html:latest johncusey/nginx:1.0
+Johns-MacBook-Pro:Case2 johncusey$ docker tag hello-world-html:latest johncusey/nginx-hello-world:1.0
 ```   
 Checking Tag  
 
 ```
 Johns-MacBook-Pro:Case2 johncusey$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-johncusey/nginx     1.0                 e86aefe80c78        4 days ago          109MB
-hello-world-html    latest              e86aefe80c78        4 days ago          109MB
-nginx               1.14                ecc98fc2f376        12 days ago         109MB
 ``` 
 
 Pushing the Tag to the DockerHub Respository
@@ -198,13 +194,8 @@ docker push <repository-name>/<image-name>:<tag>
 *Example:*    
 
 ```    
-Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/nginx:1.0
-The push refers to repository [docker.io/johncusey/nginx]e375a45d3148: Pushed
-dc527487744c: Pushed
-19c605f267f4: Mounted from library/nginx
-f4a5f8f59caa: Mounted from library/nginx
-237472299760: Mounted from library/nginx
-1.0: digest: sha256:93ee8aa053ae1a7141c4c09dfb99b08adebac6f0a49efa49461014dfa205e08f size: 1362
+Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/nginx-hello-world:1.0
+
 ```     
 
 Seeing the Tag on DockerHub    
