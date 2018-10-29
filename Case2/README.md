@@ -138,7 +138,7 @@ Create account at Dockerhub and Sign In
 
 Create DockerHub New Respository   
 
-![DockerHub New Resposity](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_create_respos.png)   
+![DockerHub New Resposity](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_new_respository.png)   
 
 Naming DockerHub Respository  
 
