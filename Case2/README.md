@@ -132,9 +132,18 @@ Johns-MacBook-Pro:Case2 johncusey$
 
 # Step 6: Logging into Dockerhub account on the terminal
 
-Create account at Dockerhub
+Create account at Dockerhub and Sign In
 
-![DockerHub](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/Docker_Hub.png)  
+![DockerHub Sign In](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_sign_in.png)  
+
+Create DockerHub New Respository   
+
+![DockerHub New Resposity](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_create_respos.png)   
+
+Naming DockerHub Respository  
+
+![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_Creating_Repository.png)
+
 
 
 docker login 
