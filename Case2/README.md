@@ -214,7 +214,9 @@ Commiting to the Respository
 docker commit <container-id> <repository-name>/<image-name>:<tag>
 ``` 
 
+Seeing the Tag on DockerHub    
 
+![Seeing Tag](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_seeing_tag.png)     
 
 
 
