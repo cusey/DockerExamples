@@ -144,20 +144,78 @@ Naming DockerHub Respository
 
 ![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_Creating_Repository.png)
 
+Public Respository
 
+![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_public_respository.png)
 
-docker login 
+Checking Containers Name  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker ps
+CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS                  NAMES
+23bd60b54210        hello-world-html:latest   "nginx -g 'daemon of…"   4 days ago          Up 4 days           0.0.0.0:7778->80/tcp   my-nginx-container-2
+cd6777560c34        hello-world-html:latest   "nginx -g 'daemon of…"   4 days ago          Up 4 days           0.0.0.0:7777->80/tcp   my-nginx-container-1
+```  
+
+Login into DockerHub  
+
+``` 
+Johns-MacBook-Pro:Case2 johncusey$ docker login
+Authenticating with existing credentials...Login Succeeded
+```   
+
+Creating Tag
+
+*Sytax:*
+
+```   
 docker tag <currentimage>:<tag> <repository-name>/<image-name>:<tag>
-docker tag my-nginx:latest johncusey/nginx:1.0
+```
+*Example:*
 
+```   
+Johns-MacBook-Pro:Case2 johncusey$ docker tag hello-world-html:latest johncusey/ngnix:1.0
+```   
+
+Checking Tag  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+johncusey/ngnix     1.0                 e86aefe80c78        4 days ago          109MB
+hello-world-html    latest              e86aefe80c78        4 days ago          109MB
+nginx               1.14                ecc98fc2f376        12 days ago         109MB
+``` 
+
+Pulling to the Respository
+
+*Sytax:*  
+
+```    
 docker push <repository-name>/<image-name>:<tag>
-docker push johncusey/nginx:1.0
+``` 
 
+*Example:*    
+
+```    
+Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/ngnix:1.0The push refers to repository [docker.io/johncusey/ngnix]e375a45d3148: Pushed
+dc527487744c: Pushed
+19c605f267f4: Mounted from library/nginx
+f4a5f8f59caa: Mounted from library/nginx
+237472299760: Mounted from library/nginx
+1.0: digest: sha256:93ee8aa053ae1a7141c4c09dfb99b08adebac6f0a49efa49461014dfa205e08f size: 1362
+```     
+
+Commiting to the Respository    
+
+*Sytax:* 
+
+``` 
 docker commit <container-id> <repository-name>/<image-name>:<tag>
+``` 
 
-docker pull <repository-name>/<image-name>:<tag>
-docker pull johncusey/nginx:1.0
 
-docker run -itd --name my-nginx-container-1 -p 7777:80 johncusey/nginx:1.0
+
+
 
 
