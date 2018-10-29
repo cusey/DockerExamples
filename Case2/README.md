@@ -175,15 +175,14 @@ docker tag <currentimage>:<tag> <repository-name>/<image-name>:<tag>
 *Example:*
 
 ```   
-Johns-MacBook-Pro:Case2 johncusey$ docker tag hello-world-html:latest johncusey/ngnix:1.0
+Johns-MacBook-Pro:Case2 johncusey$ docker tag hello-world-html:latest johncusey/nginx:1.0
 ```   
-
 Checking Tag  
 
 ```
 Johns-MacBook-Pro:Case2 johncusey$ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-johncusey/ngnix     1.0                 e86aefe80c78        4 days ago          109MB
+johncusey/nginx     1.0                 e86aefe80c78        4 days ago          109MB
 hello-world-html    latest              e86aefe80c78        4 days ago          109MB
 nginx               1.14                ecc98fc2f376        12 days ago         109MB
 ``` 
@@ -199,8 +198,8 @@ docker push <repository-name>/<image-name>:<tag>
 *Example:*    
 
 ```    
-Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/ngnix:1.0
-The push refers to repository [docker.io/johncusey/ngnix]e375a45d3148: Pushed
+Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/nginx:1.0
+The push refers to repository [docker.io/johncusey/nginx]e375a45d3148: Pushed
 dc527487744c: Pushed
 19c605f267f4: Mounted from library/nginx
 f4a5f8f59caa: Mounted from library/nginx
