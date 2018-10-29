@@ -163,6 +163,7 @@ Login into DockerHub
 Johns-MacBook-Pro:Case2 johncusey$ docker login
 Authenticating with existing credentials...Login Succeeded
 ```   
+# Step 7 Creating and Pushing Tag
 
 Creating Tag
 
@@ -187,7 +188,7 @@ hello-world-html    latest              e86aefe80c78        4 days ago          
 nginx               1.14                ecc98fc2f376        12 days ago         109MB
 ``` 
 
-Pulling to the Respository
+Pushing the Tag to the DockerHub Respository
 
 *Sytax:*  
 
@@ -210,17 +211,3 @@ f4a5f8f59caa: Mounted from library/nginx
 Seeing the Tag on DockerHub    
 
 ![Seeing Tag](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_seeing_tag.png)  
-
-Commiting to the Respository    
-
-*Sytax:* 
-
-``` 
-docker commit <container-id> <repository-name>/<image-name>:<tag>
-``` 
-
-   
-
-
-
-
