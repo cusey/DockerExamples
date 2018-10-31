@@ -142,11 +142,11 @@ Create DockerHub New Respository
 
 Naming DockerHub Respository  
 
-![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_add_repository.PNG)
+![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_adding_repository.PNG)
 
 Public Respository
 
-![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_nginx_repository.PNG)
+![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_nginx_hello_world.PNG)
 
 Checking Containers Name  
 
@@ -200,4 +200,4 @@ Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/nginx-hello-world:1.0
 
 Seeing the Tag on DockerHub    
 
-![Seeing Tag](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_seeing_tag.png)  
+![Seeing Tag](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_tag_nginx_hello_world.PNG)
