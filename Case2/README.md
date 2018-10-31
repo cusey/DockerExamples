@@ -204,6 +204,11 @@ Seeing the Tag on DockerHub
 
 # Step 8 Remove all the containers and images
 
+Stop container   
+```   
+docker stop <container-id>
+```     
+
 Note: To remove an image the corresponding container built from that image will need to be removed.
 
 Remove a specific container   
