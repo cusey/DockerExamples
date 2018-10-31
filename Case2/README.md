@@ -231,7 +231,7 @@ docker rmi $(docker images -q)
 Pulling my image from DockerHub
 
 ```
-$ docker pull johncusey/nginx-hello-world:1.0
+Johns-MacBook-Pro:Case2 johncusey$ docker pull johncusey/nginx-hello-world:1.0
 
 1.0: Pulling from johncusey/nginx-hello-world
 f17d81b4b692: Pull complete
@@ -254,16 +254,18 @@ nginx                         latest              71c43202b8ac        2 months a
 Starting container
 
 ```
-$ docker run -itd --name my-nginx-container-1 -p 7777:80 johncusey/nginx-hello-world:1.0
+Johns-MacBook-Pro:Case2 johncusey$  docker run -itd --name my-nginx-container-1 -p 7777:80 johncusey/nginx-hello-world:1.0
 54ec898170bdb90fac48e25d3c0298cdf8014ac24e4cb8a61b45145254255f90
 ```
 
 Looking at container
 
 ```
-$ docker ps
+Johns-MacBook-Pro:Case2 johncusey$  docker ps
 CONTAINER ID        IMAGE                             COMMAND                  CREATED              STATUS              PORTS                  NAMES
 54ec898170bd        johncusey/nginx-hello-world:1.0   "nginx -g 'daemon of…"   About a minute ago   Up About a minute   0.0.0.0:7777->80/tcp   my-nginx-container-1
 ```     
 
+Open browser see webppage
 
+![hello world webpage](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/my-nginx-container-1.png)
