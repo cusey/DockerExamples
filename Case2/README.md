@@ -226,4 +226,44 @@ remove all images
 docker rmi $(docker images -q)
 ```
 
-# Step 9 Pulling image from DockerHub
+# Step 9 Pulling image from DockerHub and running a container
+
+Pulling my image from DockerHub
+
+```
+$ docker pull johncusey/nginx-hello-world:1.0
+
+1.0: Pulling from johncusey/nginx-hello-world
+f17d81b4b692: Pull complete
+3df1ab0a1750: Pull complete
+576b56a453df: Pull complete
+4f237bfe8e06: Pull complete
+c8861280b9ee: Pull complete
+Digest: sha256:93ee8aa053ae1a7141c4c09dfb99b08adebac6f0a49efa49461014dfa205e08f
+Status: Downloaded newer image for johncusey/nginx-hello-world:1.0
+```  
+
+Looking at images
+
+```
+$ docker images
+REPOSITORY                    TAG                 IMAGE ID            CREATED             SIZE
+johncusey/nginx-hello-world   1.0                 e86aefe80c78        6 days ago          109MB
+nginx                         latest              71c43202b8ac        2 months ago        109MB
+``` 
+Starting container
+
+```
+$ docker run -itd --name my-nginx-container-1 -p 7777:80 johncusey/nginx-hello-world:1.0
+54ec898170bdb90fac48e25d3c0298cdf8014ac24e4cb8a61b45145254255f90
+```
+
+Looking at container
+
+```
+$ docker ps
+CONTAINER ID        IMAGE                             COMMAND                  CREATED              STATUS              PORTS                  NAMES
+54ec898170bd        johncusey/nginx-hello-world:1.0   "nginx -g 'daemon of…"   About a minute ago   Up About a minute   0.0.0.0:7777->80/tcp   my-nginx-container-1
+```     
+
+
