@@ -201,3 +201,27 @@ Johns-MacBook-Pro:Case2 johncusey$ docker push johncusey/nginx-hello-world:1.0
 Seeing the Tag on DockerHub    
 
 ![Seeing Tag](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_tag_nginx_hello_world.PNG)
+
+## Step 8 Remove all the containers and images
+
+Note: To remove an image the corresponding container built from that image will need to be removed.
+
+Remove a specific container   
+```   
+docker rm <container-id>
+```   
+
+Remove all containers    
+```
+docker rm $(docker ps -a -q)
+```
+
+remove image (note: no containers for this image should be running)    
+```
+docker rmi <image-id>
+```
+
+remove all images
+```
+docker rmi $(docker images -q)
+```
