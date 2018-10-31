@@ -142,11 +142,11 @@ Create DockerHub New Respository
 
 Naming DockerHub Respository  
 
-![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_Creating_Repository.png)
+![DockerHub Naming](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_add_repository.PNG)
 
 Public Respository
 
-![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_public_respository.png)
+![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_nginx_repository.PNG)
 
 Checking Containers Name  
 
