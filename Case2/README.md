@@ -146,7 +146,7 @@ Naming DockerHub Respository
 
 Public Respository
 
-![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_nginx_hello_world.PNG)
+![Public Respository](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case2/DockerHub_public_nginx_hello_world.PNG)
 
 Checking Containers Name  
 
