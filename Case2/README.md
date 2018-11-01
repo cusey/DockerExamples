@@ -15,7 +15,7 @@ Use case 2 : Build - > Ship - > Run an nginx instance running an html page.
             j. docker logs.   
             k. running on a random port (-P)   
 
-## Step 1: Building an image
+## Step 1: Building an image using Dockerfile
 
 **Sytax:**  
 
