@@ -79,14 +79,14 @@ docker logs -ft  <container-id>
 Johns-MacBook-Pro:Case2 johncusey$ docker logs -ft  <container-id> 
 ```
 
-## Step 5: Login into the container 
+## Step 5: Login into the container to see the file structure   
 
-**Syntax:**
+**Syntax:**   
 
 ```
 docker exec -it  <container-id> /bin/bash
 ```
-**Example**  
+**Example**     
 
 ```
 Johns-MacBook-Pro:Case2 johncusey$ docker exec -it  <container-id> /bin/bash
