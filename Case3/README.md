@@ -38,3 +38,46 @@ Johns-MacBook-Pro:Case2 johncusey$ cd /Users/johncusey/OneDrive/Documents/GitHub
 
 Johns-MacBook-Pro:Case2 johncusey$ docker build -t my-java-docker  .
 
+```   
+
+## Step 3: List all the images
+**Syntax:**   
+
+```
+docker images
+```
+**Example**   
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker images
+```  
+
+## Step 3: Running a container from the image. 
+
+**Syntax:**
+
+```
+docker run -itd --name <container-name> 
+```
+**Example**  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker run -itd --name my-java-docker
+```   
+
+
+## Step 4: Look at the log files 
+
+**Syntax:**
+
+```
+docker logs -ft  <container-id> 
+```
+**Example**  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker logs -ft  <container-id> 
+```
+
+
+
