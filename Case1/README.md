@@ -1,6 +1,20 @@
 # Use Case 1 : 
 # Host a website on Apache httpd Server
 
+Use case 1 : Build - > Ship - > Run an httpd instance running an html page.   
+
+            a. How to download an image.   
+            b. How to run a container from the image.   
+            c. How to run a container directly   
+            d. How to view containers which are running   
+            e. How to view images which are installed.   
+            f. Stopping a container   
+            g. Starting a container   
+            h. Removing a container    
+            i. Removing images.    
+            j. docker logs.   
+            k. running on a random port     
+
 ## Step 1: Building an image  
 
 **Sytax:**
