@@ -3,7 +3,7 @@
 Use case 3 : Run a simple java Hello World Program
 
 
-## Setup the Eclispe IDE   
+## Setup 1 the Eclispe IDE and building Maven Project    
 
 Setup workspace were the github repository is located.   
 
@@ -17,7 +17,7 @@ Click Next
 
 ![Maven Setttings](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case3/Eclipse_maven_setting.png)   
 
-Select Maven maven-archetype-quickstart   
+Select maven-archetype-quickstart 1.1   
 
 ![Maven Achetype](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case3/Eclispe_maven_achetype.png)    
 
