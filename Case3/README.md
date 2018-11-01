@@ -96,6 +96,8 @@ Johns-MacBook-Pro:Case2 johncusey$ docker exec -it  <container-id> /bin/bash
 # cd /usr/local/docker-git-hello-world
 
 # cd /usr/local/docker-git-hello-world/target 
+
+#exit
 ```
 
 
