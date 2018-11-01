@@ -34,7 +34,7 @@ docker build -t <image-name> <location of dockerfile>
 **Example:**
 
 ```
-Johns-MacBook-Pro:Case2 johncusey$ cd /Users/johncusey/OneDrive/Documents/GitHub/DockerExamples/Case2
+Johns-MacBook-Pro:Case2 johncusey$ cd /Users/johncusey/OneDrive/Documents/GitHub/DockerExamples/Case3
 
 Johns-MacBook-Pro:Case2 johncusey$ docker build -t my-java-docker  .
 
