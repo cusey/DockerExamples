@@ -98,7 +98,11 @@ Johns-MacBook-Pro:Case2 johncusey$ docker exec -it  <container-id> /bin/bash
 # cd /usr/local/docker-git-hello-world/target 
 
 #exit
-```
+```    
+
+## Link your DockerHub with your GitHub repository   
+
+
 
 
 
