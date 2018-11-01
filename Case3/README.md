@@ -79,5 +79,24 @@ docker logs -ft  <container-id>
 Johns-MacBook-Pro:Case2 johncusey$ docker logs -ft  <container-id> 
 ```
 
+## Step 5: Login into the container 
+
+**Syntax:**
+
+```
+docker exec -it  <container-id> /bin/bash
+```
+**Example**  
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ docker exec -it  <container-id> /bin/bash
+
+#ls
+
+# cd /usr/local/docker-git-hello-world
+
+# cd /usr/local/docker-git-hello-world/target 
+```
+
 
 
