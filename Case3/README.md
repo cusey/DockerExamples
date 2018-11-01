@@ -3,7 +3,7 @@
 Use case 3 : Run a simple java Hello World Program
 
 
-## Setup 1 the Eclispe IDE and building Maven Project    
+## Setup 1: the Eclispe IDE and building Maven Project    
 
 Setup workspace were the github repository is located.   
 
@@ -24,4 +24,17 @@ Select maven-archetype-quickstart 1.1
 Select the following Maven Achetype Parameters    
 
 ![Maven Achetype Parameter](https://github.com/cusey/ImageForWiki/blob/master/DockerExamples/Case3/Eclipse_maven_archetype_para.png)
+
+## Setup 2: Build images using the Dockerfile
+
+**Sytax:** 
+```
+docker build -t <image-name> <location of dockerfile>
+```
+**Example:**
+
+```
+Johns-MacBook-Pro:Case2 johncusey$ cd /Users/johncusey/OneDrive/Documents/GitHub/DockerExamples/Case2
+
+Johns-MacBook-Pro:Case2 johncusey$ docker build -t my-java-docker  .
 
