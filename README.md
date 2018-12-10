@@ -4,6 +4,7 @@
 # Examples Cases  
 
 * Case 1 : Host a website on Apache httpd Server
+* Case 2 : Build - > Ship - > Run an nginx instance running an html page.
 
 # Wiki
 ## Home 
