@@ -1,3 +1,4 @@
+![CuseyHub](https://github.com/cusey/ImageForWiki/blob/master/Logos/CuseyHub_Banner_Small.jpg)
 
 ![Docker Logo](https://github.com/cusey/ImageForWiki/blob/master/Logos/Docker.PNG)
 
@@ -12,3 +13,14 @@
 ## A1. Cheat Sheet
 * Images Commands 
 * Containers Commands  
+
+## Built With
+* Angular 6
+* Node
+* Microsoft Visual Studio Code     
+
+## Authors
+* John Cusey - CuseyHub  
+
+## License   
+This project is licensed under the MIT License
