@@ -15,8 +15,7 @@
 * Containers Commands  
 
 ## Built With
-* Angular 6
-* Node
+* Docker
 * Microsoft Visual Studio Code     
 
 ## Authors
